@@ -1,16 +1,15 @@
 
 
 public class Main {
-
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        dog.name();
-        dog.eat();
-        dog.sleep();
-        dog.sound();
 
-        Cat cat = new Cat();
-        cat.name();
+        Animal dog = new Dog("Timbersaw");
+        Animal cat = new Cat("Razor");
+
+        dog.eat();
+        dog.sound();
+        dog.sleep();
+
         cat.eat();
         cat.sound();
         cat.sleep();

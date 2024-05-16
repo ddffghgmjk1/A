@@ -1,16 +1,10 @@
-public class Cat  extends  Animal {
+public class Cat extends Animal {
 
-    public void name() {
-        System.out.println("Razor");
+    public Cat(String name) {
+        super(name);
     }
-    public void eat () {
-        System.out.println("Razor eating");
-    }
-    public void sleep () {
-        System.out.println("Razor sleep");
-    }
+
     public void sound () {
-        System.out.println("Razor makes a sound"+" Meaw Meaw");
+        System.out.println(getName() + " says: Meow Meow");
     }
-
 }

@@ -1,18 +1,11 @@
 public class Dog extends Animal {
 
-    public void name() {
-        System.out.println("Jack");
+    public Dog(String name) {
+        super(name);
     }
+
+
     public void sound () {
-        System.out.println("Jack makes a sound"+" Woof Woof");
+        System.out.println(getName() + " says: Woof Woof");
     }
-
-    public void eat () {
-        System.out.println("Jack eating");
-    }
-    public void sleep () {
-        System.out.println("Jack sleep");
-    }
-
-
 }

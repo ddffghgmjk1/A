@@ -1,12 +1,29 @@
 public class Animal {
+    private String name;
 
-    public void eat () {
-        System.out.println("The animal eat");
+
+    public Animal(String name) {
+        this.name = name;
+
     }
-    public void sleep () {
-        System.out.println("The animal sleep");
+
+    public String getName() {
+        return name;
     }
-    public void sound () {
-        System.out.println("The animal makes a sound");
+
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public void sound() {
+        System.out.println("Animal sound");
+    }
+
+    public void eat() {
+        System.out.println(name + " is eating");
+    }
+    public void sleep() {
+        System.out.println(name + " is sleeping");
+    }
+
 }
